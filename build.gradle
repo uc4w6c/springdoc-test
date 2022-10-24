@@ -14,9 +14,13 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springdoc:springdoc-openapi-ui:1.6.11'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.12'
 	// springdoc-openapi-commonをローカルのjarで上書きを行う
-	implementation(fileTree(dir: 'libs', include: ['springdoc-openapi-common-1.6.12-SNAPSHOT.jar', 'springdoc-openapi-webmvc-core-1.6.12-SNAPSHOT.jar']))
+	// implementation(fileTree(dir: 'libs', include: ['springdoc-openapi-common-1.6.12-SNAPSHOT.jar', 'springdoc-openapi-webmvc-core-1.6.12-SNAPSHOT.jar']))
+	// implementation(fileTree(dir: 'libs', include: [
+			// 'springdoc-openapi-common-1.6.13-SNAPSHOT.jar',
+			// 'springdoc-openapi-webmvc-core-1.6.12-SNAPSHOT.jar'
+	// ]))
 	implementation 'org.apache.commons:commons-lang3:3.12.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
