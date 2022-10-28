@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  swagger-ui:
+    image: swaggerapi/swagger-ui
+    ports:
+      - "8002:8080"
+    volumes:
+      - ./api-docs/api-docs.yaml:/api-docs.yaml
+    environment:
+      SWAGGER_JSON: /api-docs.yaml
