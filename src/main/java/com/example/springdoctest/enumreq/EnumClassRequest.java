@@ -6,14 +6,14 @@ import org.springframework.lang.Nullable;
 
 public class EnumClassRequest {
   @Nullable
-  @Schema(nullable = true, example = "RED", allowableValues = { "null" })
-  private Color color;
+  @Schema(nullable = true, example = "RED")
+  private ColorNull color;
 
-  public EnumClassRequest(@JsonProperty("color") Color color) {
+  public EnumClassRequest(@JsonProperty("color") ColorNull color) {
     this.color = color;
   }
 
-  public Color getColor() {
+  public ColorNull getColor() {
     return color;
   }
 }
