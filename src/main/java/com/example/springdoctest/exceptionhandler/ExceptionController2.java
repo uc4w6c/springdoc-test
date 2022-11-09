@@ -1,5 +1,6 @@
 package com.example.springdoctest.exceptionhandler;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,7 @@ public class ExceptionController2 {
   }
 
   @ExceptionHandler(Exception.class)
+  @Hidden
   @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
   @ApiResponse(responseCode = "500", description = "bad request")
   public String customControllerException() {

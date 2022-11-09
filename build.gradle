@@ -20,6 +20,7 @@ dependencies {
 	// implementation(fileTree(dir: 'libs', include: ['springdoc-openapi-common-1.6.12-SNAPSHOT.jar', 'springdoc-openapi-webmvc-core-1.6.12-SNAPSHOT.jar']))
 	// implementation(fileTree(dir: 'libs', include: [
 			// 'springdoc-openapi-common-1.6.13-SNAPSHOT.jar',
+			// 'springdoc-openapi-ui-1.6.13-SNAPSHOT.jar'
 			// 'springdoc-openapi-webmvc-core-1.6.12-SNAPSHOT.jar'
 	// ]))
 	implementation 'org.apache.commons:commons-lang3:3.12.0'

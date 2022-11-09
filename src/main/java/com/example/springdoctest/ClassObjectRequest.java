@@ -1,16 +1,21 @@
 package com.example.springdoctest;
 
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 public class ClassObjectRequest {
   // @Parameter(name = "id")
   private String id;
-  // @Parameter(name = "name")
+  @Parameter(name = "name")
   private String name;
 
-  public ClassObjectRequest(String id, String name) {
+  @Parameter(name = "intParam")
+  private Integer age;
+
+  public ClassObjectRequest(String id, String name, Integer age) {
     this.id = id;
     this.name = name;
+    this.age = age;
   }
 
   public String getId() {
@@ -19,6 +24,10 @@ public class ClassObjectRequest {
 
   public String getName() {
     return name;
+  }
+
+  public Integer getAge() {
+    return age;
   }
 
   @Override

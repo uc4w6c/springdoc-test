@@ -9,3 +9,4 @@ services:
       - ./api-docs/api-docs.yaml:/api-docs.yaml
     environment:
       SWAGGER_JSON: /api-docs.yaml
+      DEEP_LINKING: false
