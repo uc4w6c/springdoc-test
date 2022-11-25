@@ -13,9 +13,9 @@ import io.swagger.v3.oas.models.media.StringSchema;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+// @Configuration
 public class OpenApiConfig {
-  @Bean
+  // @Bean
   public OpenAPI initOpenAPI() {
     OpenAPI openApi = new OpenAPI();
     openApi.info(
