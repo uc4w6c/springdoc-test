@@ -7,10 +7,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-/*
 @OpenAPIDefinition(
-		servers = {
-				@Server(
+		servers = {}
+/*				@Server(
 						url = "https://{profile}.example.com/",
 						variables = {
 								@ServerVariable(
@@ -20,9 +19,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 								)
 						}
 				)
-		}
-)
+
  */
+)
 public class SpringdocTestApplication {
 
 	public static void main(String[] args) {
