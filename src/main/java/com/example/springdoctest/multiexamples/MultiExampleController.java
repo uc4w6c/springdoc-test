@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("multi/examples")
-public class HelloController {
+public class MultiExampleController {
   @PostMapping("/test")
   @ApiResponses(
       value = {
