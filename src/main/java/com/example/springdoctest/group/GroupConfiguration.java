@@ -10,7 +10,18 @@ public class GroupConfiguration {
   // @Bean
   public GroupedOpenApi petOpenApi() {
     String paths[] = {"/books/**"};
-    return GroupedOpenApi.builder().group("books").pathsToMatch(paths)
+    return GroupedOpenApi.builder()
+        .group("books")
+        .pathsToMatch(paths)
+        .build();
+  }
+
+  // @Bean
+  public GroupedOpenApi exampleOpenApi() {
+    return GroupedOpenApi.builder()
+        .group("example")
+        .packagesToScan("com.example")
+        .pathsToMatch("/example/**")
         .build();
   }
 }
