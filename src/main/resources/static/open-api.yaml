@@ -1,0 +1,46 @@
+openapi: 3.0.1
+servers:
+  - url: http://localhost:8081
+    description: Generated server url
+tags:
+  - name: users
+    description: description Info
+paths:
+  /multi/examples/test:
+    post:
+      tags:
+        - multi-example-controller
+      operationId: test
+      responses:
+        "404":
+          description: example response
+        "200":
+          description: OK
+          content:
+            application/json:
+              examples:
+                An example request with the minimum required fields to create.:
+                  summary: Minimal request
+                  description: An example request with the minimum required fields
+                    to create.
+                  value: min
+                An example request with all fields provided with example values.:
+                  summary: Full request
+                  description: An example request with all fields provided with example
+                    values.
+                  value: full
+        "400":
+          description: BAD REQUEST
+          content:
+            application/json:
+              examples:
+                RoleNoMatch:
+                  description: RoleNoMatch
+                  value:
+                    code: 400
+                    Message: Permission and Role type doesn't match
+                MustUUID:
+                  description: MustUUID
+                  value:
+                    code: 400
+                    Message: Permission must be UUID value
