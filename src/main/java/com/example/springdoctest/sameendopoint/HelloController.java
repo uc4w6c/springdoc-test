@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
+/**
+ * https://github.com/springdoc/springdoc-openapi/issues/2238
+ */
 @RestController
 @RequestMapping("same/endpoint/hello")
 public class HelloController {
